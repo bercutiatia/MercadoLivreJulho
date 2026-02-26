@@ -8,7 +8,7 @@ mercado_livre_bp = Blueprint('mercado_livre', __name__)
 # Configurações da aplicação Mercado Livre
 CLIENT_ID = '7588002866610145'
 CLIENT_SECRET = 'T9ueuIVjoLRjlJkfBQQwi4V8UqtebAWf'
-REDIRECT_URI = 'https://app-ml-api.onrender.com/api/ml/callback'
+REDIRECT_URI = 'https://app-ml-ffds.onrender.com/api/ml/callback'
 AUTH_URL = 'https://auth.mercadolivre.com.br/authorization'
 TOKEN_URL = 'https://api.mercadolivre.com/oauth/token'
 API_BASE_URL = 'https://api.mercadolivre.com'
