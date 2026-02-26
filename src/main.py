@@ -2,12 +2,17 @@ import os
 import sys
 # DON'T CHANGE THIS !!!
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+import logging
+logging.basicConfig(level=logging.DEBUG)
+print("=== INICIANDO APLICAÇÃO ===")
 
 from flask import Flask, send_from_directory
 from flask_cors import CORS
 from src.models.user import db
 from src.routes.user import user_bp
 from src.routes.mercado_livre import mercado_livre_bp
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback-dev-key')
