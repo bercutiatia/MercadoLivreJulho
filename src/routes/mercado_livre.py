@@ -6,9 +6,9 @@ from urllib.parse import urlencode
 mercado_livre_bp = Blueprint('mercado_livre', __name__)
 
 # Configurações da aplicação Mercado Livre
-CLIENT_ID = '7588002866610145'
-CLIENT_SECRET = 'T9ueuIVjoLRjlJkfBQQwi4V8UqtebAWf'
-REDIRECT_URI = 'https://app-ml-ffds.onrender.com/api/ml/callback'
+CLIENT_ID = os.getenv('7588002866610145')
+CLIENT_SECRET = os.getenv('T9ueuIVjoLRjlJkfBQQwi4V8UqtebAWf')
+REDIRECT_URI = os.getenv('REDIRECT_URI', 'https://app-ml-ffds.onrender.com/api/ml/callback')
 AUTH_URL = 'https://auth.mercadolivre.com.br/authorization'
 TOKEN_URL = 'https://api.mercadolivre.com/oauth/token'
 API_BASE_URL = 'https://api.mercadolivre.com'
