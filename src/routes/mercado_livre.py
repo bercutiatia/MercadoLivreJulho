@@ -6,12 +6,12 @@ from urllib.parse import urlencode
 mercado_livre_bp = Blueprint('mercado_livre', __name__)
 
 # Configurações da aplicação Mercado Livre
-CLIENT_ID = '5295789575661998'
-CLIENT_SECRET = 'brSlVq9Z2q9p36647Ve5HsB1wokX6YQK'
-REDIRECT_URI = 'https://mercadolivreprodutos.onrender.com/callback'
-AUTH_URL = 'https://auth.mercadolibre.com.ar/authorization'
-TOKEN_URL = 'https://api.mercadolibre.com/oauth/token'
-API_BASE_URL = 'https://api.mercadolibre.com'
+CLIENT_ID = '7588002866610145'
+CLIENT_SECRET = 'T9ueuIVjoLRjlJkfBQQwi4V8UqtebAWf'
+REDIRECT_URI = 'https://app-ml-api.onrender.com/api/ml/callback'
+AUTH_URL = 'https://auth.mercadolivre.com.br/authorization'
+TOKEN_URL = 'https://api.mercadolivre.com/oauth/token'
+API_BASE_URL = 'https://api.mercadolivre.com'
 
 @mercado_livre_bp.route('/auth', methods=['GET'])
 def auth():
